@@ -1,0 +1,39 @@
+# ===== Jenkins runtime (절대 제외) =====
+secrets/
+credentials.xml
+users/
+logs/
+workspace/
+nodes/
+
+# ===== Jenkins build artifacts =====
+jobs/**/builds/
+jobs/**/workspace/
+
+# ===== Jenkins cache / temp =====
+updates/
+copy_reference_file.log
+war/
+
+# ===== OS =====
+.DS_Store
+# ===== Jenkins runtime (절대 제외) =====
+jenkins/jenkins_home/secrets/
+jenkins/jenkins_home/credentials.xml
+jenkins/jenkins_home/users/
+jenkins/jenkins_home/logs/
+jenkins/jenkins_home/workspace/
+jenkins/jenkins_home/nodes/
+
+# ===== Jenkins build artifacts =====
+jenkins/jenkins_home/jobs/**/builds/
+jenkins/jenkins_home/jobs/**/workspace/
+
+# ===== Jenkins cache / temp =====
+jenkins/jenkins_home/updates/
+jenkins/jenkins_home/copy_reference_file.log
+jenkins/jenkins_home/war/
+
+# ===== OS =====
+.DS_Store
+
