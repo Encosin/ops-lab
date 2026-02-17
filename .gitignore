@@ -37,3 +37,4 @@ jenkins/jenkins_home/war/
 # ===== OS =====
 .DS_Store
 
+change_pw/
