@@ -38,3 +38,8 @@ war/
 .DS_Store
 
 change_pw/
+
+
+
+# ===== Argo CD =====
+*/ArgoCD/secrets
