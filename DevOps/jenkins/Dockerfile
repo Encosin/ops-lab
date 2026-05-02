@@ -1,12 +1,12 @@
 # Jenkins 2.479
-FROM jenkins/jenkins:2.479
+FROM jenkins/jenkins:lts
 
 # 환경 설정 
 
 # 홈 디렉토리
-VOLUME /data/shell_code/jenkins/jenkins_home
+VOLUME ./jenkins_home
 
-COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+COPY ./plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN jenkins-plugin-cli --verbose --plugin-file /usr/share/jenkins/ref/plugins.txt
 
 # Web UI, Agent
