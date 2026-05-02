@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jenkins:
-    container_name: jenkins
+    container_name: Jenkins
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,6 +10,6 @@ services:
       - "8080:8080"
       - "50000:50000"
     volumes:
-      - /data/shell_code/jenkins/jenkins_home:/var/jenkins_home
+      - ./jenkins_home:/var/jenkins_home
     restart: unless-stopped
 
