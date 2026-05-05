@@ -24,6 +24,7 @@ war/
 */jenkins/jenkins_home/logs/
 */jenkins/jenkins_home/workspace/
 */jenkins/jenkins_home/nodes/
+*/jenkins/jenkins_home/secret.key
 
 # ===== Jenkins build artifacts =====
 */jenkins/jenkins_home/jobs/**/builds/
@@ -43,3 +44,8 @@ change_pw/
 
 # ===== Argo CD =====
 */ArgoCD/secrets
+
+
+# ===== Stock bot_slack ====
+.env
+credentials.txt
